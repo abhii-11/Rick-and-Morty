@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rick and Morty Show</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./dist/css/styles.css">
+</head>
+<body>
+
+<header class="jumbotron text-center">
+  <h1>Rick and Morty Show</h1>
+</header>
+  
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-md-3">
+        <div class="js-filters filters">
+            <h2>Filters</h2>
+            <div class="box">
+                <h3 class="filter-title">Species</h3>
+                <ul class="list-group filters">
+                    <li class="list-group-item form-check">
+                        <input type="checkbox" class="form-check-input" id="human">
+                        <label class="form-check-label" for="human">Human</label>
+                    </li>
+                    <li class="list-group-item form-check">
+                        <input type="checkbox" class="form-check-input" id="alien">
+                        <label class="form-check-label" for="alien">Aliens</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3 class="filter-title">Gender</h3>
+                <ul class="list-group filters">
+                    <li class="list-group-item form-check">
+                        <input type="checkbox" class="form-check-input" id="male">
+                        <label class="form-check-label" for="male">Male</label>
+                    </li>
+                    <li class="list-group-item form-check">
+                        <input type="checkbox" class="form-check-input" id="female">
+                        <label class="form-check-label" for="female">Female</label>
+                    </li>
+                    <li class="list-group-item form-check">
+                        <input type="checkbox" class="form-check-input" id="unknown">
+                        <label class="form-check-label" for="unknown">Unknown</label>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-9">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="js-pills-block pills-container">
+                    <h2 class="">Selected Filters</h2>
+                    <div class="js-pills-container">
+                        <!--Pills will be rendered here-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-4">
+                <div class="form-group">
+                    <input type="text" class="form-control js-search-by-name" placeholder="Search by Name">
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 col-lg-3 pull-right">
+                <div class="form-group">
+                    <select class="form-control js-sort">
+                      <option data-sort-type="ascending">Ascending</option>
+                      <option data-sort-type="descending">Descending</option>
+                    </select>
+                  </div>               
+            </div>
+        </div>
+        <div class="row profiles js-profiles">
+            <div class="text-center">
+                <img src="https://media.giphy.com/media/VseXvvxwowwCc/giphy.gif" alt="Loader Gif" />
+            </div>
+        </div>
+      
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="./dist/js/script.js"></script>
+
+</div>
+
+</body>
+</html>
