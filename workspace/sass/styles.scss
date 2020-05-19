@@ -11,6 +11,9 @@ body{
         @media (min-width: 992px){
             max-width: 250px;
         }
+        h2{
+            margin-bottom: 30px;
+        }
         .box{
             border: solid #ddd 2px;
             border-radius: 5px;
@@ -43,7 +46,7 @@ body{
             border: solid 2px;
             border-radius: 10px;
             position: relative;
-            margin-right: 20px;
+            margin: 0 20px 20px 0;
             i{
                 position: absolute;
                 top: 8px;
@@ -64,9 +67,17 @@ body{
             margin-bottom: 30px;
             border: solid 2px #d4af37;
             border-radius: 5px;
-            height: 530px;
+            @media (min-width: 768px){
+                height: 530px;
+            }
             .image-block{
                 position: relative;
+                @media (max-width: 767px){
+                    text-align: center;
+                    >img{
+                        margin: auto;
+                    }
+                }
                 .main-info{
                     position: absolute;
                     bottom: 0;
