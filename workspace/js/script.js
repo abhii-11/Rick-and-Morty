@@ -100,9 +100,9 @@ var rickMortyShow = {
         $('.js-name').each(function(){
             var currentName = $(this).text().toLowerCase().trim();
             if(currentName.indexOf(searchTerm) >= 0){
-                $(this).closest('.card').parent().show('slow');
+                $(this).closest('.card').parent().show();
             }else{
-                $(this).closest('.card').parent().hide('slow');
+                $(this).closest('.card').parent().hide();
             }
         });
     },
